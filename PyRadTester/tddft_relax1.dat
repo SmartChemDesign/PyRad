@@ -1,0 +1,4499 @@
+used distances in angstroms:
+	H* dissociation: 1.5
+	H2 creation: 0.8
+	H3O* creation: 2.9
+	HO2* creation: 1.5
+	H2O2 creation: 1.2
+used time step: 0.1000056249320998 fs
+
+iteration #0
+	h2o: 95
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 0
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #1
+	h2o: 95
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 0
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #2
+	h2o: 95
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 0
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #3
+	h2o: 95
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 0
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #4
+	h2o: 95
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 0
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #5
+	h2o: 95
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 0
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #6
+	h2o: 95
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 0
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #7
+	h2o: 95
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 0
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #8
+	h2o: 95
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 0
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #9
+	h2o: 95
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 0
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #10
+	h2o: 95
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 0
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #11
+	h2o: 95
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 0
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #12
+	h2o: 95
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 0
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #13
+	h2o: 95
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 0
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #14
+	h2o: 95
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 0
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #15
+	h2o: 95
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 0
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #16
+	h2o: 95
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 0
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #17
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #18
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #19
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #20
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #21
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #22
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #23
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #24
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #25
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #26
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #27
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #28
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #29
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #30
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #31
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #32
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #33
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #34
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #35
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #36
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #37
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #38
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #39
+	h2o: 93
+	h_diss: 0
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #40
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #41
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #42
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #43
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #44
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #45
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #46
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #47
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #48
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #49
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #50
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #51
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #52
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #53
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #54
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #55
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #56
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #57
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #58
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #59
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #60
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #61
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #62
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #63
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #64
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #65
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #66
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #67
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #68
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #69
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #70
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #71
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #72
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #73
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #74
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #75
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #76
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #77
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #78
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #79
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #80
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #81
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #82
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #83
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #84
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #85
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #86
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #87
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #88
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #89
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #90
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #91
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #92
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #93
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #94
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #95
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #96
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #97
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #98
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #99
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #100
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #101
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #102
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #103
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #104
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #105
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #106
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #107
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #108
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #109
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #110
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #111
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #112
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #113
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #114
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #115
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #116
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #117
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #118
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #119
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #120
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #121
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #122
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #123
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #124
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #125
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #126
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #127
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #128
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #129
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #130
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #131
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #132
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #133
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #134
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #135
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #136
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #137
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #138
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #139
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #140
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #141
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #142
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #143
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #144
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #145
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #146
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #147
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #148
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #149
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #150
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #151
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #152
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #153
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #154
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #155
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #156
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #157
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #158
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #159
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #160
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #161
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #162
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #163
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #164
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #165
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #166
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #167
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #168
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #169
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #170
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #171
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #172
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #173
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #174
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #175
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #176
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #177
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #178
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #179
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #180
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #181
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #182
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #183
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #184
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #185
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #186
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #187
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #188
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #189
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #190
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #191
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #192
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #193
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #194
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #195
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #196
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #197
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #198
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #199
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #200
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #201
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #202
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #203
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #204
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #205
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #206
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #207
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #208
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #209
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #210
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #211
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #212
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #213
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #214
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #215
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #216
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #217
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #218
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #219
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #220
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #221
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #222
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #223
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #224
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #225
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #226
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #227
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #228
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #229
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #230
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #231
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #232
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #233
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #234
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #235
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #236
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #237
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #238
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #239
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #240
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #241
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #242
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #243
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #244
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #245
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #246
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #247
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #248
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #249
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #250
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #251
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #252
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #253
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #254
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #255
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #256
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #257
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #258
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #259
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #260
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #261
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #262
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #263
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #264
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #265
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #266
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #267
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #268
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #269
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #270
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #271
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #272
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #273
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #274
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #275
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #276
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #277
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #278
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #279
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #280
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #281
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #282
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #283
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #284
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #285
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #286
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #287
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #288
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #289
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #290
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #291
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #292
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #293
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #294
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #295
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #296
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #297
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #298
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #299
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #300
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #301
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #302
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #303
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #304
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #305
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #306
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #307
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #308
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #309
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #310
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #311
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #312
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #313
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #314
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #315
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #316
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #317
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #318
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #319
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #320
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #321
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #322
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #323
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #324
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #325
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #326
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #327
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #328
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #329
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #330
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #331
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #332
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #333
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #334
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #335
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #336
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #337
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #338
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #339
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #340
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #341
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #342
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #343
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #344
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #345
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #346
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #347
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #348
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #349
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #350
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #351
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #352
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #353
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #354
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #355
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #356
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #357
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #358
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #359
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #360
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #361
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #362
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #363
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #364
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #365
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #366
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #367
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #368
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #369
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #370
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #371
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #372
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #373
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #374
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #375
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #376
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #377
+	h2o: 94
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 1
+	h2: 0
+	h3o: 0
+	ho2: 0
+	h2o2: 0
+iteration #378
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #379
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #380
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #381
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #382
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #383
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #384
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #385
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #386
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #387
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #388
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #389
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #390
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #391
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #392
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #393
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #394
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #395
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #396
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #397
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #398
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #399
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #400
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #401
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #402
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #403
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #404
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #405
+	h2o: 92
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 2
+	h2: 0
+	h3o: 1
+	ho2: 0
+	h2o2: 0
+iteration #406
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #407
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #408
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #409
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #410
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #411
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #412
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #413
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #414
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #415
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #416
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #417
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #418
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #419
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #420
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #421
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #422
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #423
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #424
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #425
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #426
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #427
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #428
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #429
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #430
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #431
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #432
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #433
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #434
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #435
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #436
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #437
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #438
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #439
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #440
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #441
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #442
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #443
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #444
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #445
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #446
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #447
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #448
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #449
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #450
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #451
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #452
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #453
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #454
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #455
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #456
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #457
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #458
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #459
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #460
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #461
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #462
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #463
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #464
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #465
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #466
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #467
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #468
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #469
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #470
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #471
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #472
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #473
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #474
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #475
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #476
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #477
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #478
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #479
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #480
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #481
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #482
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #483
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #484
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #485
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #486
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #487
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #488
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #489
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #490
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #491
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #492
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #493
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #494
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #495
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #496
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #497
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
+iteration #498
+	h2o: 90
+	h_diss: 1
+	o_diss: 0
+	oh_diss: 3
+	h2: 0
+	h3o: 2
+	ho2: 0
+	h2o2: 0
