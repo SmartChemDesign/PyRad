@@ -1,20 +1,19 @@
-import os
 import re
-from operator import itemgetter, sub
-from sys import argv
-
-import matplotlib.pyplot as plt
 import numpy as np
-from matplotlib.ticker import MaxNLocator
-from matplotlib.widgets import Slider, Button
+from operator import itemgetter, sub
+import os
+from sys import argv
 from scipy.spatial import distance
+import matplotlib.pyplot as plt
+from matplotlib.widgets import Slider, Button
+from matplotlib.ticker import MaxNLocator
 
 
 def get_system(file):
     """
-    Loads whole system to the script
-    No Element Tree anymore: sometimes we want to parse a broken file
-    :param file: filename of the QB@LL .o file
+    load whole system to script
+    No element tree anymore: sometimes we want to parse broken files
+    :param file: filename of QB@LL .o file
     :return:
     1)ionic steps list  of atom list of dictionary (N, nom, coo)
     where coo is list of x,y,z coordinated
@@ -98,11 +97,11 @@ def get_system(file):
 
 def shape_h2o_mols_and_find_dist(reference, system):
     """
-    Modifies the same system list, but for oxygen there's additional list
-    of h1 and h2 distances (H1 - O - H2)
+    Returns only deviated molecules defined by criteria and reference system
     :param reference: ref. snapshot of system, all molecules are not ionized
     :param system: system to analyze
-
+    :return: return same system list, but for oxygen there's additional list
+    of h1 and h2 distances
     """
     # loop by every system frame + corresponding number
     for frame in system:
@@ -122,7 +121,7 @@ def shape_h2o_mols_and_find_dist(reference, system):
 def count_h2o_mols_and_radicals(system, h_diss_dist, h2_creation_dist, h3o_creation_dist, ho2_creation_dist,
                                 h2o2_creation_dist):
     """
-    Returns only deviated molecules defined by criteria
+    Find all species in the system
     :param system: where to search
     :param h_diss_dist: distance when h counts as radical
     :param h2_creation_dist: distance when two h counts as h2 formation
@@ -144,8 +143,7 @@ def count_h2o_mols_and_radicals(system, h_diss_dist, h2_creation_dist, h3o_creat
         ho2 = list()
         h2o2 = list()
 
-        # get info from oxygens (distances from O to H1 and H2)
-        # 'primary' particles: H, OH
+        # get only info in oxygens (dists to H)
         for i in range(1, len(frame), 3):
             # H2O explosion!
             if (frame[i]["dist"][0] > h_diss_dist) and (frame[i]["dist"][1] > h_diss_dist):
@@ -154,13 +152,13 @@ def count_h2o_mols_and_radicals(system, h_diss_dist, h2_creation_dist, h3o_creat
                 o_diss.append(frame[i])
                 continue
 
-            # dissociation OH + H
+            # OH and H dissociation
             if (frame[i]["dist"][0] > h_diss_dist) and not (frame[i]["dist"][1] > h_diss_dist):
                 h_diss.append(frame[i - 1])
                 oh_diss.append((frame[i], frame[i + 1]))
                 continue
 
-            # dissociation OH + H with another H
+            # OH and H dissociation with another H
             if not (frame[i]["dist"][0] > h_diss_dist) and (frame[i]["dist"][1] > h_diss_dist):
                 h_diss.append(frame[i + 1])
                 oh_diss.append((frame[i], frame[i - 1]))
@@ -169,7 +167,7 @@ def count_h2o_mols_and_radicals(system, h_diss_dist, h2_creation_dist, h3o_creat
             # no dissociation
             h2o.append((frame[i - 1], frame[i], frame[i + 1]))
 
-        # 'secondary' particles:
+        # new compounds formed:
 
         # formation of H2 - iterate over all elements over all elements
         for item1 in h_diss:
@@ -229,8 +227,8 @@ def count_h2o_mols_and_radicals(system, h_diss_dist, h2_creation_dist, h3o_creat
 
 
 # MAIN CYCLE============================================================================================================
-# TODO: rework matplotlib window. Now the best results only in 1920x1080 fullscreen
-# default distances - for sliders in matplotlib
+
+# default distances
 _h_diss_dist = 1.5
 _h2_creation_dist = 0.8
 _h3o_creation_dist = 2.9
@@ -376,25 +374,25 @@ ax.set_ylabel('species count')
 x_axis = np.asarray(range(len(species[1:]))) * dt
 
 ax_h2, = ax.plot(x_axis, [len(x["h2"]) for x in species[1:]], marker='', color='y',
-                 linewidth=1.5, label="H2")
+                 linewidth=1.5, label="$H_2$")
 ax_h202, = ax.plot(x_axis, [len(x["h2o2"]) for x in species[1:]], "-", color='m',
-                   linewidth=2, label="H2O2")
+                   linewidth=2, label="$H_2O_2$")
 ax_h_diss, = ax.plot(x_axis, [len(x["h_diss"]) for x in species[1:]], ":", color='g',
-                     linewidth=2.5, label="H*")
+                     linewidth=2.5, label="$H^*$")
 ax_o_diss, = ax.plot(x_axis, [len(x["o_diss"]) for x in species[1:]], "--", color='r',
-                     linewidth=1, label="O*")
+                     linewidth=1, label="$O^*$")
 ax_oh_diss, = ax.plot(x_axis, [len(x["oh_diss"]) for x in species[1:]], ":", color='b',
-                      linewidth=1.5, label="OH*")
+                      linewidth=1.5, label="$OH^*$")
 ax_h3o, = ax.plot(x_axis, [len(x["h3o"]) for x in species[1:]], marker='', color='c',
-                  linewidth=1.5, label="H3O*")
+                  linewidth=1.5, label="$H_3O^*$")
 ax_ho2, = ax.plot(x_axis, [len(x["ho2"]) for x in species[1:]], marker='', color='k',
-                  linewidth=1, label="HO2*")
+                  linewidth=1, label="$HO_2^*$")
 
 # use 2nd axis for water count
 ax_water = ax.twinx()
 ax_h2o, = ax_water.plot(x_axis, [len(x["h2o"]) for x in species[1:]], ":", marker='', color='r',
-                        linewidth=1, label="H2O")
-ax_water.set_ylabel('H2O count', color="r")
+                        linewidth=1, label="$H_2O$")
+ax_water.set_ylabel('$H_2O$ count', color="r")
 
 ax.legend(bbox_to_anchor=(1.13, 1))
 ax_water.legend(loc=2)
