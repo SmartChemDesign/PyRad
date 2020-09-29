@@ -1,4 +1,5 @@
 import copy
+import os
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -286,8 +287,9 @@ def save_anomalies(_):
     anoCube.n_atoms = len(mpos)
     anoCube.atoms = list(map(int, mval * 10))
     anoCube.atoms_xyz = list(mpos)
-
-    anoCube.save(anoCube.filename.split(".")[0] + "_anomaly.cube")
+    
+    _, tail = os.path.split(anoCube.filename)
+    anoCube.save(tail.split(".")[0] + "_anomaly.cube")
     print("anomaly file saved!")
 
 
