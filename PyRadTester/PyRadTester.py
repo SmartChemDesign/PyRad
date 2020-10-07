@@ -5,6 +5,7 @@ from sys import argv
 
 import matplotlib.pyplot as plt
 import numpy as np
+from tqdm import tqdm
 from matplotlib.ticker import MaxNLocator
 from matplotlib.widgets import Slider, Button
 from scipy.spatial import distance
@@ -24,6 +25,8 @@ def get_system(file):
     ionic_step_data = list()
     # summary for all ionic steps
     ionic_step_summary = list()
+    # summary for econst parameter
+    econst_data = list()
 
     # compile regexp for separating atom symbol and its number
     pattern = re.compile("([a-zA-Z]+)([0-9]+)")
@@ -41,13 +44,19 @@ def get_system(file):
     # step time in atomic units
     au_time = 0.0
 
-    with open(file, 'r') as f:
-        lines = f.readlines()
-        for line in lines:
+    num_lines = sum(1 for _ in open(file, 'rb'))
 
+    with open(file, 'r') as f:
+        for line in tqdm(f, total=num_lines, mininterval=0.5):
+            line = line.rstrip("\n")
             # if line is set dt line - get au_time
             if line.startswith("<!-- [qball] set dt"):
                 au_time = float(re.findall(r"[-+]?\d*\.?\d+|[-+]?\d+", line)[0])
+                continue
+                
+            # if line is econst - add it to the list
+            if line.startswith("  <econst>"):
+                econst_data.append(float(re.findall(r"[-+]?\d*\.?\d+|[-+]?\d+", line)[0]))
                 continue
 
             # if line is related to starting new ionic iteration
@@ -92,7 +101,10 @@ def get_system(file):
     # sort atoms by number, not by element symbol as QB@LL does
     for i in range(len(ionic_step_summary)):
         ionic_step_summary[i] = sorted(ionic_step_summary[i], key=itemgetter("N"))
-
+        
+    # save econst list to file
+    np.savetxt(f"{name.split('.')[0] + '_econst.csv'}", np.asarray(econst_data), delimiter=',')
+    
     return ionic_step_summary, au_time * 0.02418884254  # a.u. -> fs
 
 
@@ -105,7 +117,7 @@ def shape_h2o_mols_and_find_dist(reference, system):
 
     """
     # loop by every system frame + corresponding number
-    for frame in system:
+    for frame in tqdm(system, mininterval=0.5):
         d_frame = list()
 
         # compute difference in coordinates
@@ -134,7 +146,7 @@ def count_h2o_mols_and_radicals(system, h_diss_dist, h2_creation_dist, h3o_creat
     species_list = list()
 
     # loop by every frame in the system
-    for frame in system:
+    for frame in tqdm(system, mininterval=0.5):
         h2o = list()
         h_diss = list()
         oh_diss = list()
@@ -180,6 +192,7 @@ def count_h2o_mols_and_radicals(system, h_diss_dist, h2_creation_dist, h3o_creat
                         # so item1 and item2 are not h_diss - remove them
                         h_diss.remove(item1)
                         h_diss.remove(item2)
+                        break
 
         # formation of H3O - iterate over all water molecules and iterate over all h_diss
         for item1 in h2o:
@@ -187,9 +200,9 @@ def count_h2o_mols_and_radicals(system, h_diss_dist, h2_creation_dist, h3o_creat
                 # item1[1] is oxygen atom
                 if distance.euclidean(item1[1]["coo"], item2["coo"]) < h3o_creation_dist:
                     h3o.append((item1, item2))
-                    # remove item1 and item 2 from old lists
                     h2o.remove(item1)
                     h_diss.remove(item2)
+                    break
 
         # formation of HO2 as a product of OH_diss and O_diss
         for item1 in oh_diss:
@@ -200,6 +213,7 @@ def count_h2o_mols_and_radicals(system, h_diss_dist, h2_creation_dist, h3o_creat
                     # remove item1 and item 2 from old lists
                     oh_diss.remove(item1)
                     o_diss.remove(item2)
+                    break
 
         # there's two places where we can find h2o2:
         # 1st - HO - OH
@@ -212,6 +226,7 @@ def count_h2o_mols_and_radicals(system, h_diss_dist, h2_creation_dist, h3o_creat
                         # remove item1 and item 2 from old lists
                         oh_diss.remove(item1)
                         oh_diss.remove(item2)
+                        break
 
         # 2nd - HO2 - H
         for item1 in ho2:
@@ -222,185 +237,205 @@ def count_h2o_mols_and_radicals(system, h_diss_dist, h2_creation_dist, h3o_creat
                     # remove item1 and item 2 from old lists
                     ho2.remove(item1)
                     h_diss.remove(item2)
+                    break
 
         species_list.append({"h2o": h2o, "h2": h2, "h_diss": h_diss, "o_diss": o_diss, "oh_diss": oh_diss, "h3o": h3o,
                              "ho2": ho2, "h2o2": h2o2})
     return species_list
 
 
-# MAIN CYCLE============================================================================================================
-# TODO: rework matplotlib window. Now the best results only in 1920x1080 fullscreen
-# default distances - for sliders in matplotlib
-_h_diss_dist = 1.5
-_h2_creation_dist = 0.8
-_h3o_creation_dist = 2.9
-_ho2_creation_dist = 1.5
-_h2o2_creation_dist = 1.2
+if __name__ == '__main__':
+    # MAIN CYCLE========================================================================================================
+    # TODO: rework matplotlib window. Now the best results only in 1920x1080 fullscreen
 
-# global names
-_name = ''
-species = None
-s = None
+    # default distances - for sliders in matplotlib
+    _h_diss_dist = 1.5
+    _h2_creation_dist = 0.8
+    _h3o_creation_dist = 2.9
+    _ho2_creation_dist = 1.5
+    _h2o2_creation_dist = 1.2
 
+    # global names
+    _name = ''
+    species = None
+    s = None
 
-def save_results(_):
-    """
-    Save button routine, save all species to .dat file
-    :return: None
-    """
-    global _name
-    global species
-    global dt
-    # write output
-    with open(_name.split(".")[0] + ".dat", "w+") as outfile:
-        outfile.write(f"used distances in angstroms:\n\tH* dissociation: {_h_diss_dist}"
-                      f"\n\tH2 creation: {_h2_creation_dist}\n\tH3O* creation: {_h3o_creation_dist}"
-                      f"\n\tHO2* creation: {_ho2_creation_dist}\n\tH2O2 creation: {_h2o2_creation_dist}\n")
-        outfile.write(f"used time step: {dt} fs\n\n")
-        for j in range(len(species)):
-            outfile.write(f"iteration #{j}\n")
-            item = species[j]
-            outfile.write(f"\th2o: {len(item['h2o'])}\n")
-            outfile.write(f"\th_diss: {len(item['h_diss'])}\n")
-            outfile.write(f"\to_diss: {len(item['o_diss'])}\n")
-            outfile.write(f"\toh_diss: {len(item['oh_diss'])}\n")
-            outfile.write(f"\th2: {len(item['h2'])}\n")
-            outfile.write(f"\th3o: {len(item['h3o'])}\n")
-            outfile.write(f"\tho2: {len(item['ho2'])}\n")
-            outfile.write(f"\th2o2: {len(item['h2o2'])}\n")
-    print("\tresult was written in .dat file")
-
-
-def save_image(_):
-    plt.savefig(f"{_name.split('.')[0]}.jpg", dpi=600,
-                bbox_inches=ax.get_window_extent().transformed(fig.dpi_scale_trans.inverted()).expanded(1.8, 1.4))
-    print("\tjpg was saved")
+    def save_results(_):
+        """
+        Save button routine, save all species to .dat file
+        :return: None
+        """
+        print("\tsaving dat file")
+        global _name
+        global species
+        global dt
+        # write output
+        with open(_name.split(".")[0] + ".dat", "w+") as outfile:
+            outfile.write(f"used distances in angstroms:\n\tH* dissociation: {_h_diss_dist}"
+                          f"\n\tH2 creation: {_h2_creation_dist}\n\tH3O* creation: {_h3o_creation_dist}"
+                          f"\n\tHO2* creation: {_ho2_creation_dist}\n\tH2O2 creation: {_h2o2_creation_dist}\n")
+            outfile.write(f"used time step: {dt} fs\n\n")
+            for i, item in enumerate(species):
+                outfile.write(f"iteration #{i}\n")
+                outfile.write(f"\th2o: {len(item['h2o'])}\n")
+                outfile.write(f"\th_diss: {len(item['h_diss'])}\n")
+                outfile.write(f"\to_diss: {len(item['o_diss'])}\n")
+                outfile.write(f"\toh_diss: {len(item['oh_diss'])}\n")
+                outfile.write(f"\th2: {len(item['h2'])}\n")
+                outfile.write(f"\th3o: {len(item['h3o'])}\n")
+                outfile.write(f"\tho2: {len(item['ho2'])}\n")
+                outfile.write(f"\th2o2: {len(item['h2o2'])}\n")
+        print("\tOK")
 
 
-# check arguments line
-if len(argv) == 1:
-    print("Arguments: .o qb@ll out file")
-    exit()
+    def save_image(_):
+        print("\tsaving jpg file")
+        plt.savefig(f"{_name.split('.')[0]}.jpg", dpi=600,
+                    bbox_inches=ax.get_window_extent().transformed(fig.dpi_scale_trans.inverted()).expanded(1.8, 1.4))
+                    
 
-# plot configuration
-fig, ax = plt.subplots()
-plt.subplots_adjust(left=0.25, bottom=0.45)
-ax.margins(x=0)
+    def save_xyz(_):
+        print("\tsaving xyz file")
+        global _name
+        global s
+        global dt
+        with open(_name.split(".")[0] + ".xyz", "w+") as xyzfile:
+            for i, frame in enumerate(s):
+                xyzfile.write(f"{len(frame)}\n")
+                xyzfile.write(f"{dt*i} fs\n")
+                for atom in frame:
+                    xyzfile.write(f"{atom['nom']} {atom['coo'][0]} {atom['coo'][1]} {atom['coo'][2]}\n")
+        print("\tOK")
+        
 
-axcolor = 'lightgoldenrodyellow'
+    # check arguments line
+    if len(argv) == 1:
+        print("Arguments: .o qb@ll out file")
+        exit()
 
-# create space for sliders
-ax_h_diss = plt.axes([0.25, 0.31, 0.65, 0.03], facecolor=axcolor)
-ax_h2 = plt.axes([0.25, 0.27, 0.65, 0.03], facecolor=axcolor)
-ax_h3o = plt.axes([0.25, 0.23, 0.65, 0.03], facecolor=axcolor)
-ax_ho2 = plt.axes([0.25, 0.19, 0.65, 0.03], facecolor=axcolor)
-ax_h2o2 = plt.axes([0.25, 0.15, 0.65, 0.03], facecolor=axcolor)
-ax_save = plt.axes([0.8, 0.08, 0.12, 0.05])
+    # plot configuration
+    fig, ax = plt.subplots()
+    plt.subplots_adjust(left=0.25, bottom=0.45)
+    ax.margins(x=0)
 
-ax_saveimg = plt.axes([0.6, 0.08, 0.12, 0.05])
+    axcolor = 'lightgoldenrodyellow'
 
-# create sliders
-S_h_diss = Slider(ax_h_diss, "H_diss", 0.1, 8.0, valinit=_h_diss_dist, valstep=0.1)
-S_h2 = Slider(ax_h2, "H2 creation", 0.1, 8.0, valinit=_h2_creation_dist, valstep=0.1)
-S_h3o = Slider(ax_h3o, "H3O creation", 0.1, 8.0, valinit=_h3o_creation_dist, valstep=0.1)
-S_ho2 = Slider(ax_ho2, "HO2 creation", 0.1, 8.0, valinit=_ho2_creation_dist, valstep=0.1)
-S_h2o2 = Slider(ax_h2o2, "H2O2 creation", 0.1, 8.0, valinit=_h2o2_creation_dist, valstep=0.1)
-B_save = Button(ax_save, "Save .dat")
-B_saveimg = Button(ax_saveimg, "Save .jpg")
+    # create space for sliders
+    ax_h_diss = plt.axes([0.25, 0.31, 0.65, 0.03], facecolor=axcolor)
+    ax_h2 = plt.axes([0.25, 0.27, 0.65, 0.03], facecolor=axcolor)
+    ax_h3o = plt.axes([0.25, 0.23, 0.65, 0.03], facecolor=axcolor)
+    ax_ho2 = plt.axes([0.25, 0.19, 0.65, 0.03], facecolor=axcolor)
+    ax_h2o2 = plt.axes([0.25, 0.15, 0.65, 0.03], facecolor=axcolor)
 
-# create buttons
-B_save.on_clicked(save_results)
-B_saveimg.on_clicked(save_image)
+    ax_save = plt.axes([0.8, 0.08, 0.12, 0.05])
+    ax_saveimg = plt.axes([0.6, 0.08, 0.12, 0.05])
+    ax_savexyz = plt.axes([0.4, 0.08, 0.12, 0.05])
+
+    # create sliders
+    S_h_diss = Slider(ax_h_diss, "H_diss", 0.1, 8.0, valinit=_h_diss_dist, valstep=0.1)
+    S_h2 = Slider(ax_h2, "H2 creation", 0.1, 8.0, valinit=_h2_creation_dist, valstep=0.1)
+    S_h3o = Slider(ax_h3o, "H3O creation", 0.1, 8.0, valinit=_h3o_creation_dist, valstep=0.1)
+    S_ho2 = Slider(ax_ho2, "HO2 creation", 0.1, 8.0, valinit=_ho2_creation_dist, valstep=0.1)
+    S_h2o2 = Slider(ax_h2o2, "H2O2 creation", 0.1, 8.0, valinit=_h2o2_creation_dist, valstep=0.1)
+    
+    B_save = Button(ax_save, "Save .dat")
+    B_saveimg = Button(ax_saveimg, "Save .jpg")
+    B_savexyz = Button(ax_savexyz, "Save .xyz")
+
+    # create buttons
+    B_save.on_clicked(save_results)
+    B_saveimg.on_clicked(save_image)
+    B_savexyz.on_clicked(save_xyz)
 
 
-def update(_):
-    """
-    Slider updater routine
-    """
-    global _h_diss_dist
-    global _h2_creation_dist
-    global _h3o_creation_dist
-    global _ho2_creation_dist
-    global _h2o2_creation_dist
-    global species
-    global s
-    _h_diss_dist = S_h_diss.val
-    _h2_creation_dist = S_h2.val
-    _h3o_creation_dist = S_h3o.val
-    _ho2_creation_dist = S_ho2.val
-    _h2o2_creation_dist = S_h2o2.val
+    def update(_):
+        """
+        Slider updater routine
+        """
+        global _h_diss_dist
+        global _h2_creation_dist
+        global _h3o_creation_dist
+        global _ho2_creation_dist
+        global _h2o2_creation_dist
+        global species
+        global s
+        _h_diss_dist = S_h_diss.val
+        _h2_creation_dist = S_h2.val
+        _h3o_creation_dist = S_h3o.val
+        _ho2_creation_dist = S_ho2.val
+        _h2o2_creation_dist = S_h2o2.val
+        print("\tfinding all molecular/atomic structures with new criteria...")
+        species = count_h2o_mols_and_radicals(s[1:], _h_diss_dist, _h2_creation_dist, _h3o_creation_dist,
+                                              _ho2_creation_dist, _h2o2_creation_dist)
+
+        ax_h2o.set_ydata([len(x["h2o"]) for x in species[1:]])
+        ax_h2.set_ydata([len(x["h2"]) for x in species[1:]])
+        ax_h202.set_ydata([len(x["h2o2"]) for x in species[1:]])
+        ax_h_diss.set_ydata([len(x["h_diss"]) for x in species[1:]])
+        ax_o_diss.set_ydata([len(x["o_diss"]) for x in species[1:]])
+        ax_oh_diss.set_ydata([len(x["oh_diss"]) for x in species[1:]])
+        ax_h3o.set_ydata([len(x["h3o"]) for x in species[1:]])
+        ax_ho2.set_ydata([len(x["ho2"]) for x in species[1:]])
+
+        ax.relim()
+        ax_water.relim()
+        ax.autoscale_view()
+        ax_water.autoscale_view()
+
+        fig.canvas.draw_idle()
+
+
+    # apply update function to sliders
+
+    S_h_diss.on_changed(update)
+    S_h2.on_changed(update)
+    S_h3o.on_changed(update)
+    S_ho2.on_changed(update)
+    S_h2o2.on_changed(update)
+
+    # main routine #####################################################################################################
+    _name = os.path.basename(argv[1])
+    print("\treading file...")
+    s, dt = get_system(_name)
+    print("\tcomputing the difference from the non-irradiated frame...")
+    shape_h2o_mols_and_find_dist(s[0], s[1:])
+    print("\tfinding all molecular/atomic structures...")
     species = count_h2o_mols_and_radicals(s[1:], _h_diss_dist, _h2_creation_dist, _h3o_creation_dist,
                                           _ho2_creation_dist, _h2o2_creation_dist)
 
-    ax_h2o.set_ydata([len(x["h2o"]) for x in species[1:]])
-    ax_h2.set_ydata([len(x["h2"]) for x in species[1:]])
-    ax_h202.set_ydata([len(x["h2o2"]) for x in species[1:]])
-    ax_h_diss.set_ydata([len(x["h_diss"]) for x in species[1:]])
-    ax_o_diss.set_ydata([len(x["o_diss"]) for x in species[1:]])
-    ax_oh_diss.set_ydata([len(x["oh_diss"]) for x in species[1:]])
-    ax_h3o.set_ydata([len(x["h3o"]) for x in species[1:]])
-    ax_ho2.set_ydata([len(x["ho2"]) for x in species[1:]])
+    # prepare plot
 
-    ax.relim()
-    ax_water.relim()
-    ax.autoscale_view()
-    ax_water.autoscale_view()
+    ax.set_xlabel('time, fs')
+    ax.set_ylabel('species count')
 
-    fig.canvas.draw_idle()
+    x_axis = np.asarray(range(len(species[1:]))) * dt
 
+    ax_h2, = ax.plot(x_axis, [len(x["h2"]) for x in species[1:]], marker='', color='y',
+                     linewidth=1.5, label="$H_2$")
+    ax_h202, = ax.plot(x_axis, [len(x["h2o2"]) for x in species[1:]], "-", color='m',
+                       linewidth=2, label="$H_2O_2$")
+    ax_h_diss, = ax.plot(x_axis, [len(x["h_diss"]) for x in species[1:]], ":", color='g',
+                         linewidth=2.5, label="$H^*$")
+    ax_o_diss, = ax.plot(x_axis, [len(x["o_diss"]) for x in species[1:]], "--", color='r',
+                         linewidth=1, label="$O^*$")
+    ax_oh_diss, = ax.plot(x_axis, [len(x["oh_diss"]) for x in species[1:]], ":", color='b',
+                          linewidth=1.5, label="$OH^*$")
+    ax_h3o, = ax.plot(x_axis, [len(x["h3o"]) for x in species[1:]], marker='', color='c',
+                      linewidth=1.5, label="$H_3O^*$")
+    ax_ho2, = ax.plot(x_axis, [len(x["ho2"]) for x in species[1:]], marker='', color='k',
+                      linewidth=1, label="$HO_2^*$")
 
-# apply update function to sliders
+    # use 2nd axis for water count
+    ax_water = ax.twinx()
+    ax_h2o, = ax_water.plot(x_axis, [len(x["h2o"]) for x in species[1:]], ":", marker='', color='r',
+                            linewidth=1, label="$H_2O$")
+    ax_water.set_ylabel('$H_2O$ count', color="r")
 
-S_h_diss.on_changed(update)
-S_h2.on_changed(update)
-S_h3o.on_changed(update)
-S_ho2.on_changed(update)
-S_h2o2.on_changed(update)
+    ax.legend(bbox_to_anchor=(1.13, 1))
+    ax_water.legend(loc=2)
 
-# main routine #########################################################################################################
-_name = os.path.basename(argv[1])
-print(f"Working with {_name}")
-s, dt = get_system(_name)
-print("\tsystem was loaded")
-shape_h2o_mols_and_find_dist(s[0], s[1:])
-print("\tsystems' difference was calculated")
-species = count_h2o_mols_and_radicals(s[1:], _h_diss_dist, _h2_creation_dist, _h3o_creation_dist,
-                                      _ho2_creation_dist, _h2o2_creation_dist)
-print("\tcalculating species count")
+    # draw plot
+    ax.yaxis.set_major_locator(MaxNLocator(integer=True))
+    ax_water.yaxis.set_major_locator(MaxNLocator(integer=True))
 
-# prepare plot
-
-ax.set_xlabel('time, fs')
-ax.set_ylabel('species count')
-
-x_axis = np.asarray(range(len(species[1:]))) * dt
-
-ax_h2, = ax.plot(x_axis, [len(x["h2"]) for x in species[1:]], marker='', color='y',
-                 linewidth=1.5, label="$H_2$")
-ax_h202, = ax.plot(x_axis, [len(x["h2o2"]) for x in species[1:]], "-", color='m',
-                   linewidth=2, label="$H_2O_2$")
-ax_h_diss, = ax.plot(x_axis, [len(x["h_diss"]) for x in species[1:]], ":", color='g',
-                     linewidth=2.5, label="$H^*$")
-ax_o_diss, = ax.plot(x_axis, [len(x["o_diss"]) for x in species[1:]], "--", color='r',
-                     linewidth=1, label="$O^*$")
-ax_oh_diss, = ax.plot(x_axis, [len(x["oh_diss"]) for x in species[1:]], ":", color='b',
-                      linewidth=1.5, label="$OH^*$")
-ax_h3o, = ax.plot(x_axis, [len(x["h3o"]) for x in species[1:]], marker='', color='c',
-                  linewidth=1.5, label="$H_3O^*$")
-ax_ho2, = ax.plot(x_axis, [len(x["ho2"]) for x in species[1:]], marker='', color='k',
-                  linewidth=1, label="$HO_2^*$")
-
-# use 2nd axis for water count
-ax_water = ax.twinx()
-ax_h2o, = ax_water.plot(x_axis, [len(x["h2o"]) for x in species[1:]], ":", marker='', color='r',
-                        linewidth=1, label="$H_2O$")
-ax_water.set_ylabel('$H_2O$ count', color="r")
-
-ax.legend(bbox_to_anchor=(1.13, 1))
-ax_water.legend(loc=2)
-
-# draw plot
-ax.yaxis.set_major_locator(MaxNLocator(integer=True))
-ax_water.yaxis.set_major_locator(MaxNLocator(integer=True))
-
-plt.show()
+    plt.show()
