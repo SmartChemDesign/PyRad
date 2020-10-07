@@ -11,7 +11,8 @@ Usage: PyRadCreator.py input1.ini input2.ini
 .ini files, and the host .xyz files should be placed in the same directory as this script.
 all pseudopotentials should be placed in pseudos directory
 
-2) PyRadTester - H2O radicals searcher with simple gui.
+2) PyRadTester - H2O radicals searcher with simple gui. Auto output of econst .csv file. 
+For additional info about econst parameter look the url: https://github.com/LLNL/qball/wiki/Tutorial-TDDFT#finding-the-optimal-time-step
 Usage: PyRadTester.py qball_out.o
 
 3) PyRadEDensity - analyses electron density .cube file and findes all anomalies in it. With simple gui.
