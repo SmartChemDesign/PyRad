@@ -108,28 +108,21 @@ def get_system(file):
     return ionic_step_summary, au_time * 0.02418884254  # a.u. -> fs
 
 
-def shape_h2o_mols_and_find_dist(reference, system):
+def shape_h2o_mols_and_find_dist(system):
     """
     Modifies the same system list, but for oxygen there's additional list
     of h1 and h2 distances (H1 - O - H2)
-    :param reference: ref. snapshot of system, all molecules are not ionized
     :param system: system to analyze
-
+    :return: None
     """
     # loop by every system frame + corresponding number
     for frame in tqdm(system, mininterval=0.5):
-        d_frame = list()
-
-        # compute difference in coordinates
-        for atom, refatom in zip(frame, reference):
-            d_frame.append(list(map(sub, refatom["coo"], atom["coo"])))
-
         # compute distance between hydrogens and oxygen
-        for i in range(1, len(d_frame), 3):
-            h1 = distance.euclidean(d_frame[i], d_frame[i - 1])
-            h2 = distance.euclidean(d_frame[i], d_frame[i + 1])
+        for i in range(1, len(frame), 3):
+            h1 = distance.euclidean(frame[i]["coo"], frame[i - 1]["coo"])
+            h2 = distance.euclidean(frame[i]["coo"], frame[i + 1]["coo"])
             frame[i]["dist"] = [h1, h2]
-
+            
 
 def count_h2o_mols_and_radicals(system, h_diss_dist, h2_creation_dist, h3o_creation_dist, ho2_creation_dist,
                                 h2o2_creation_dist):
@@ -231,7 +224,7 @@ def count_h2o_mols_and_radicals(system, h_diss_dist, h2_creation_dist, h3o_creat
         # 2nd - HO2 - H
         for item1 in ho2:
             for item2 in h_diss:
-                # item1[1] is oxygen without hydrogen
+                # item1[1] is oxygen without hydrogen, H-O-(O) <- this one
                 if distance.euclidean(item1[1]["coo"], item2["coo"]) < h_diss_dist:
                     h2o2.append((item1, item2, "HO2-H"))
                     # remove item1 and item 2 from old lists
@@ -365,17 +358,17 @@ if __name__ == '__main__':
         _ho2_creation_dist = S_ho2.val
         _h2o2_creation_dist = S_h2o2.val
         print("\tfinding all molecular/atomic structures with new criteria...")
-        species = count_h2o_mols_and_radicals(s[1:], _h_diss_dist, _h2_creation_dist, _h3o_creation_dist,
+        species = count_h2o_mols_and_radicals(s, _h_diss_dist, _h2_creation_dist, _h3o_creation_dist,
                                               _ho2_creation_dist, _h2o2_creation_dist)
 
-        ax_h2o.set_ydata([len(x["h2o"]) for x in species[1:]])
-        ax_h2.set_ydata([len(x["h2"]) for x in species[1:]])
-        ax_h202.set_ydata([len(x["h2o2"]) for x in species[1:]])
-        ax_h_diss.set_ydata([len(x["h_diss"]) for x in species[1:]])
-        ax_o_diss.set_ydata([len(x["o_diss"]) for x in species[1:]])
-        ax_oh_diss.set_ydata([len(x["oh_diss"]) for x in species[1:]])
-        ax_h3o.set_ydata([len(x["h3o"]) for x in species[1:]])
-        ax_ho2.set_ydata([len(x["ho2"]) for x in species[1:]])
+        ax_h2o.set_ydata([len(x["h2o"]) for x in species])
+        ax_h2.set_ydata([len(x["h2"]) for x in species])
+        ax_h202.set_ydata([len(x["h2o2"]) for x in species])
+        ax_h_diss.set_ydata([len(x["h_diss"]) for x in species])
+        ax_o_diss.set_ydata([len(x["o_diss"]) for x in species])
+        ax_oh_diss.set_ydata([len(x["oh_diss"]) for x in species])
+        ax_h3o.set_ydata([len(x["h3o"]) for x in species])
+        ax_ho2.set_ydata([len(x["ho2"]) for x in species])
 
         ax.relim()
         ax_water.relim()
@@ -398,9 +391,10 @@ if __name__ == '__main__':
     print("\treading file...")
     s, dt = get_system(_name)
     print("\tcomputing the difference from the non-irradiated frame...")
-    shape_h2o_mols_and_find_dist(s[0], s[1:])
+    shape_h2o_mols_and_find_dist(s)
+    
     print("\tfinding all molecular/atomic structures...")
-    species = count_h2o_mols_and_radicals(s[1:], _h_diss_dist, _h2_creation_dist, _h3o_creation_dist,
+    species = count_h2o_mols_and_radicals(s, _h_diss_dist, _h2_creation_dist, _h3o_creation_dist,
                                           _ho2_creation_dist, _h2o2_creation_dist)
 
     # prepare plot
@@ -408,26 +402,26 @@ if __name__ == '__main__':
     ax.set_xlabel('time, fs')
     ax.set_ylabel('species count')
 
-    x_axis = np.asarray(range(len(species[1:]))) * dt
+    x_axis = np.asarray(range(len(species))) * dt
 
-    ax_h2, = ax.plot(x_axis, [len(x["h2"]) for x in species[1:]], marker='', color='y',
+    ax_h2, = ax.plot(x_axis, [len(x["h2"]) for x in species], marker='', color='y',
                      linewidth=1.5, label="$H_2$")
-    ax_h202, = ax.plot(x_axis, [len(x["h2o2"]) for x in species[1:]], "-", color='m',
+    ax_h202, = ax.plot(x_axis, [len(x["h2o2"]) for x in species], "-", color='m',
                        linewidth=2, label="$H_2O_2$")
-    ax_h_diss, = ax.plot(x_axis, [len(x["h_diss"]) for x in species[1:]], ":", color='g',
+    ax_h_diss, = ax.plot(x_axis, [len(x["h_diss"]) for x in species], ":", color='g',
                          linewidth=2.5, label="$H^*$")
-    ax_o_diss, = ax.plot(x_axis, [len(x["o_diss"]) for x in species[1:]], "--", color='r',
+    ax_o_diss, = ax.plot(x_axis, [len(x["o_diss"]) for x in species], "--", color='r',
                          linewidth=1, label="$O^*$")
-    ax_oh_diss, = ax.plot(x_axis, [len(x["oh_diss"]) for x in species[1:]], ":", color='b',
+    ax_oh_diss, = ax.plot(x_axis, [len(x["oh_diss"]) for x in species], ":", color='b',
                           linewidth=1.5, label="$OH^*$")
-    ax_h3o, = ax.plot(x_axis, [len(x["h3o"]) for x in species[1:]], marker='', color='c',
+    ax_h3o, = ax.plot(x_axis, [len(x["h3o"]) for x in species], marker='', color='c',
                       linewidth=1.5, label="$H_3O^*$")
-    ax_ho2, = ax.plot(x_axis, [len(x["ho2"]) for x in species[1:]], marker='', color='k',
+    ax_ho2, = ax.plot(x_axis, [len(x["ho2"]) for x in species], marker='', color='k',
                       linewidth=1, label="$HO_2^*$")
 
     # use 2nd axis for water count
     ax_water = ax.twinx()
-    ax_h2o, = ax_water.plot(x_axis, [len(x["h2o"]) for x in species[1:]], ":", marker='', color='r',
+    ax_h2o, = ax_water.plot(x_axis, [len(x["h2o"]) for x in species], ":", marker='', color='r',
                             linewidth=1, label="$H_2O$")
     ax_water.set_ylabel('$H_2O$ count', color="r")
 
