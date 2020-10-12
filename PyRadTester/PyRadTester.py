@@ -231,6 +231,16 @@ def count_h2o_mols_and_radicals(system, h_diss_dist, h2_creation_dist, h3o_creat
                     ho2.remove(item1)
                     h_diss.remove(item2)
                     break
+                    
+        # re-creating of water molecules
+        for item1 in h_diss:
+            for item2 in oh_diss:
+                # item2[0] is oxygen atom
+                if distance.euclidean(item1["coo"], item2[0]["coo"]) < h_diss_dist:
+                    h_diss.remove(item1)
+                    oh_diss.remove(item2)
+                    h2o.append((item1, item2[0], item2[1]))
+                    break
 
         species_list.append({"h2o": h2o, "h2": h2, "h_diss": h_diss, "o_diss": o_diss, "oh_diss": oh_diss, "h3o": h3o,
                              "ho2": ho2, "h2o2": h2o2})
