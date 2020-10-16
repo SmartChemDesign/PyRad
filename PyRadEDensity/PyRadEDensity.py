@@ -174,17 +174,17 @@ class Cube:
         old_origin[2] = old_origin[2] / self.z[2]
         self.data = ndimage.shift(self.data, -old_origin, mode='wrap')
 
-    def density_maxima(self, samplesize=4, thresh_mod=0):
+    def density_maxima(self, samplesize=5, thresh_mod=0):
         """
         Gets all maxima from electronic density
         :param samplesize: size of summing volume
         :param thresh_mod: sensitivity of method
         :return: 3d array of maxima coordinates and 1d array of its value
         """
-        filtered = ndimage.maximum_filter(self.data, size=(samplesize, samplesize, samplesize))
+        filtered = ndimage.maximum_filter(self.data, size=(samplesize, samplesize, samplesize), mode="wrap")
 
         threshold = filtered.mean() + thresh_mod
-        print(threshold)
+        print(f"actual threhold value: {threshold:.2f}")
         labels, num_labels = ndimage.label(filtered > threshold)
 
         # Coordinates of maxima
@@ -225,7 +225,7 @@ ax_th = plt.axes([0.25, 0.15, 0.65, 0.03], facecolor=axcolor)
 ax_corr = plt.axes([0.25, 0.11, 0.65, 0.03], facecolor=axcolor)
 ax_save = plt.axes([0.25, 0.07, 0.65, 0.03])
 
-S_ss = Slider(ax_ss, "sample size", 1, 10.0, valinit=4, valstep=1)
+S_ss = Slider(ax_ss, "sample size", 1, 10.0, valinit=5, valstep=1)
 S_th = Slider(ax_th, "threshold", -3.5, 3.5, valinit=0, valstep=0.1)
 S_corr = Slider(ax_corr, "correlation", 0, 8, valinit=0, valstep=0.5)
 B_save = Button(ax_save, "Save anomalies")
@@ -315,7 +315,7 @@ for coo, t in zip(iCube.atoms_xyz, iCube.atoms):
 # draw atoms
 ax.plot(np.asarray(h_type)[:, 0], np.asarray(h_type)[:, 1], np.asarray(h_type)[:, 2], marker='$H$', color='black',
         linestyle="None")
-ax.plot(np.asarray(a_type)[:, 0], np.asarray(a_type)[:, 1], np.asarray(a_type)[:, 2], marker='$a$', color='red',
+ax.plot(np.asarray(a_type)[:, 0], np.asarray(a_type)[:, 1], np.asarray(a_type)[:, 2], marker='$a$', color='black',
         linestyle="None")
 ax.plot(np.asarray(o_type)[:, 0], np.asarray(o_type)[:, 1], np.asarray(o_type)[:, 2], marker='$O$', color='black',
         linestyle="None")
