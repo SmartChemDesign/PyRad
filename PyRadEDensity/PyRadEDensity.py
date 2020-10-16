@@ -174,7 +174,7 @@ class Cube:
         old_origin[2] = old_origin[2] / self.z[2]
         self.data = ndimage.shift(self.data, -old_origin, mode='wrap')
 
-    def density_maxima(self, samplesize=4, thresh_mod=1.5):
+    def density_maxima(self, samplesize=4, thresh_mod=0):
         """
         Gets all maxima from electronic density
         :param samplesize: size of summing volume
@@ -183,7 +183,8 @@ class Cube:
         """
         filtered = ndimage.maximum_filter(self.data, size=(samplesize, samplesize, samplesize))
 
-        threshold = filtered.mean() + filtered.std() * thresh_mod
+        threshold = filtered.mean() + thresh_mod
+        print(threshold)
         labels, num_labels = ndimage.label(filtered > threshold)
 
         # Coordinates of maxima
@@ -225,7 +226,7 @@ ax_corr = plt.axes([0.25, 0.11, 0.65, 0.03], facecolor=axcolor)
 ax_save = plt.axes([0.25, 0.07, 0.65, 0.03])
 
 S_ss = Slider(ax_ss, "sample size", 1, 10.0, valinit=4, valstep=1)
-S_th = Slider(ax_th, "threshold", -0.5, 2.5, valinit=0, valstep=0.1)
+S_th = Slider(ax_th, "threshold", -3.5, 3.5, valinit=0, valstep=0.1)
 S_corr = Slider(ax_corr, "correlation", 0, 8, valinit=0, valstep=0.5)
 B_save = Button(ax_save, "Save anomalies")
 
@@ -266,7 +267,7 @@ def update(_):
 
     img.remove()
     img = ax.scatter(mpos[:, 0], mpos[:, 1], mpos[:, 2], c=mval, cmap=plt.viridis())
-    cbar.set_clim(vmin=mval.min(initial=0), vmax=mval.max(initial=0))
+    cbar.set_clim(vmin=mval.min(), vmax=mval.max())
     cbar.draw_all()
     fig.canvas.draw_idle()
 
