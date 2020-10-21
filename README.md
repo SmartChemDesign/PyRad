@@ -1,5 +1,5 @@
 # PyRad
-This script package was developed for the creation and analysis of radiolysis systems.
+This script package was developed for the creation and analysis of the radiolysis systems.
 
 The main software to do all TDDFT calculations: qb@ll (https://github.com/LLNL/qball)
 You will also need the packmol software to create systems (http://m3g.iqm.unicamp.br/packmol/home.shtml)
