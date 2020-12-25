@@ -1,12 +1,12 @@
 # PyRad
 This script package was developed for the creation and analysis of the radiolysis systems.
 
-The main software to do all TDDFT calculations: qb@ll (https://github.com/LLNL/qball)
+The main software to perform all TDDFT calculations: qb@ll (https://github.com/LLNL/qball)
 You will also need the packmol software to create systems (http://m3g.iqm.unicamp.br/packmol/home.shtml)
 
 This repo includes:
 
-1) PyRadCreator - creates enviroment for radyolysis calculation in qb@ll software.
+1) PyRadCreator - creates an enviroment for radyolysis calculation in qb@ll software.
 
         Usage: PyRadCreator.py input1.ini input2.ini
         .ini files, and the host .xyz files should be placed in the same directory as this script.
@@ -16,9 +16,10 @@ This repo includes:
 2) PyRadTester - H2O radicals searcher with simple gui. Auto output of econst .csv file. 
 
         Usage: PyRadTester.py qball_out.o
-        For additional info about econst parameter look the url: https://github.com/LLNL/qball/wiki/Tutorial-TDDFT#finding-the-optimal-time-step
+        For additional info about econst parameter see the url: 
+        https://github.com/LLNL/qball/wiki/Tutorial-TDDFT#finding-the-optimal-time-step
 
-3) PyRadEDensity - analyses electron density .cube file and findes all anomalies in it.
+3) PyRadEDensity - analyses the electron density .cube file and findes all anomalies in it.
 
         Usage: PyRadTester.py cube_file.o
 
