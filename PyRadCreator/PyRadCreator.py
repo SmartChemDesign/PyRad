@@ -43,6 +43,7 @@ def gen_packmol_inp(xyz, proj, cell_len, cell_cross, density, molmass):
 
     # create input file for packmol
     with open(f"{PATH}/packmol/" + "/PR_packmol.inp", "w+") as inp:
+        inp.write("seed -1\n")
         inp.write(f"tolerance 2.0\n")
         inp.write(f"filetype xyz\n")
         inp.write(f"output PR_initcell.xyz\n")
