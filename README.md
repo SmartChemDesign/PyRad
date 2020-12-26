@@ -11,6 +11,7 @@ This repo includes:
         Usage: PyRadCreator.py input1.ini input2.ini
         .ini files, and the host .xyz files should be placed in the same directory as this script.
         all pseudopotentials should be placed in pseudos directory
+        WARNING! qb@ll doesn't respond to windows EOL symbol on unix-based systems!
 
 
 2) PyRadTester - H2O radicals searcher with simple gui. Auto output of econst .csv file. 
