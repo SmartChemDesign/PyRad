@@ -108,7 +108,7 @@ def draw_plots():
     plt.show()
                         
 if len(sys.argv) != 2:
-    print("Usage: put .sys file as script arguments")
+    print("Usage: put .dat file as script arguments")
     exit()
 
 read_dat(sys.argv[1])
