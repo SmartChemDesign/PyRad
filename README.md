@@ -38,3 +38,7 @@ This repo includes:
 5) Utils/PyRadDatDraw.py is an utility to draw .sys file. It can be generated with PyRadTester
 
         Usage: PyRadDatDraw.py 1.sys
+        
+Please cite, if using:
+
+Andreadi, N, Mitrofanov, A, Eliseev, A, Matveev, P, Kalmykov, S, Petrov, V. PyRad: A software shell for simulating radiolysis with Qball package. J Comput Chem. 2021; 42: 944– 950. https://doi.org/10.1002/jcc.26509
